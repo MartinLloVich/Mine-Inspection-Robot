@@ -1,5 +1,8 @@
 Autonomous Navigation in Abandoned Mines
+
 This project was developed for the Guidance and Navigation course at the Polytechnic University of Madrid, as part of the Master's in Automation and Robotics. It integrates key concepts such as control systems, Kalman filtering, odometry, sensor fusion, and path planning to enable a robot to autonomously navigate and explore abandoned mine environments.
+
+
 
 🚀 Project Overview
 The goal of this project is to simulate and implement an autonomous navigation system for a robot (named "Marvin") operating in a complex, obstacle-rich mine environment. The system uses:
@@ -14,20 +17,35 @@ Odometry and Landmark-based Localization
 
 The simulation is built using Apollo, a robotics simulation environment developed by the Universidad Politécnica de Madrid.
 
+
+
 📁 Project Structure
 text
 .
-├── MINA_ABANDONADA.xml          # Mine environment definition (map, obstacles, landmarks)
+├─ MINA_ABANDONADA.xml          # Mine environment definition (map, obstacles, landmarks)
+
 ├── Ejectuable_Mina.m            # Main executable script
+
 ├── generar_mapa.m               # Map generation utility
+
 ├── Kalman_EXT.m                 # Extended Kalman Filter implementation
+
 ├── Cont_PD.m                    # PID controller for trajectory tracking
+
 ├── Cont_Reactivo.m              # Reactive control for obstacle avoidance
+
 ├── Sensores_Inc.m               # Sensor calibration and variance calculation
+
 ├── transformToMap.m             # Coordinate transformation between map systems
+
 ├── Odometria_Inc.m              # Odometry calibration and error analysis
+
 ├── PlanificadorRRT.m            # RRT* path planner
+
 └── README.md
+
+
+
 🛠️ Dependencies
 MATLAB (tested on R2021a or later)
 
@@ -36,6 +54,7 @@ Apollo Simulation Framework (provided by UPM)
 Image Processing Toolbox (for map handling)
 
 Robotics System Toolbox (for path planning)
+
 
 🧭 How to Use
 1. Set Up the Environment
@@ -66,6 +85,8 @@ Modify the following lines in Ejectuable_Mina.m to set custom start and goal pos
 matlab
 inicio = [0, 0];          % Start coordinates
 objetivo = [36, 0];       % Goal coordinates
+
+
 📊 Key Features
 Path Planning (PlanificadorRRT.m)
 Uses RRT* to find a collision-free path.
@@ -94,6 +115,7 @@ generar_mapa.m: Generates a 2D occupancy grid from the XML environment.
 
 transformToMap.m: Converts between Apollo and MATLAB coordinate systems.
 
+
 🧪 Simulation Outputs
 Real-time visualization of the robot's path.
 
@@ -103,6 +125,8 @@ Control outputs (linear and angular velocities).
 
 Success/failure status upon reaching the goal.
 
+
+
 📌 Notes
 The project assumes the Apollo framework is correctly installed and linked in MATLAB.
 
@@ -110,8 +134,12 @@ Sensor noise parameters and control gains are tuned for the provided mine enviro
 
 The RRT* planner may require adjustment of parameters (maxIterations, MaxConnectionDistance) for different environments.
 
+
 👥 Authors
-This project was developed as part of the Master's in Automation and Robotics at the Polytechnic University of Madrid.
+This project was developed as part of the Master's in Automation and Robotics at the Polytechnic University of Madrid by Martin Loring Bueno, Hector Gordillo Garcia and Javier Fernandez Pintor.
+
+
+
 
 📜 License
 This project is for academic purposes. Please acknowledge the authors if used or referenced.
