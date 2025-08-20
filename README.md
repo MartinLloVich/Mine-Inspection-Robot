@@ -18,6 +18,8 @@ Odometry and Landmark-based Localization
 
 The simulation is built using Apollo, a robotics simulation environment developed by the Universidad Politécnica de Madrid.
 
+📺 A video of the simulation can be seen here: https://youtu.be/ThW9-Oaerkg?si=Vvrn8DhEg-AWI9JP
+
 
 
 📁 Project Structure
