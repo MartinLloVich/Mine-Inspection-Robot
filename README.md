@@ -5,6 +5,7 @@ This project was developed for the Guidance and Navigation course at the Polytec
 
 
 🚀 Project Overview
+
 The goal of this project is to simulate and implement an autonomous navigation system for a robot (named "Marvin") operating in a complex, obstacle-rich mine environment. The system uses:
 
 Path Planning with RRT* (Rapidly-exploring Random Tree Star)
@@ -20,8 +21,8 @@ The simulation is built using Apollo, a robotics simulation environment develope
 
 
 📁 Project Structure
-text
-.
+
+
 ├─ MINA_ABANDONADA.xml          # Mine environment definition (map, obstacles, landmarks)
 
 ├── Ejectuable_Mina.m            # Main executable script
@@ -47,6 +48,7 @@ text
 
 
 🛠️ Dependencies
+
 MATLAB (tested on R2021a or later)
 
 Apollo Simulation Framework (provided by UPM)
@@ -65,8 +67,8 @@ Load the mine environment using MINA_ABANDONADA.xml.
 2. Run the Main Script
 Execute the main script to start the simulation:
 
-matlab
 Ejectuable_Mina
+
 This script:
 
 Initializes the robot at a starting position.
@@ -82,7 +84,6 @@ Stops when the goal is reached or after a timeout.
 3. Customize Start and Goal
 Modify the following lines in Ejectuable_Mina.m to set custom start and goal positions:
 
-matlab
 inicio = [0, 0];          % Start coordinates
 objetivo = [36, 0];       % Goal coordinates
 
